@@ -1,14 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
-const inter = Inter({ subsets: ["latin"] });
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({
+  weight: ["400", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Iron Edge | Personal Trainer",
   description:
-    " Iron Edge is a strength coach for athletes who want to improve their performance. We offer personalized training programs, nutrition plans, and recovery strategies to help you reach your goals.",
+    "Iron Edge is a strength coach for athletes who want to improve their performance. We offer personalized training programs, nutrition plans, and recovery strategies to help you reach your goals.",
 };
 
 export default function RootLayout({ children }) {
@@ -17,7 +22,7 @@ export default function RootLayout({ children }) {
       <body
         className={cn(
           "min-h-screen font-sans antialiased grainy",
-          inter.className
+          roboto.className
         )}
       >
         <Navbar />
