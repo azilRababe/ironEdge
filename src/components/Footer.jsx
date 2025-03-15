@@ -2,17 +2,17 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <section class="footer">
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <a href="#" class="footer__logo">
+    <section className="footer">
+      <div className="section__container footer__container">
+        <div className="footer__col">
+          <a href="#" className="footer__logo">
             <img src="images/logo_white.svg" alt="logo" />
           </a>
-          <ul class="footer__links">
+          <ul className="footer__links">
             <li>
               <a href="tel:+2126552074218">
                 <span>
-                  <i class="ri-customer-service-line"></i>
+                  <i className="ri-customer-service-line"></i>
                 </span>{" "}
                 +212 655 207 418
               </a>
@@ -20,7 +20,7 @@ const Footer = () => {
             <li>
               <a href="mailto:azilrababe@gmail.com">
                 <span>
-                  <i class="ri-mail-line"></i>
+                  <i className="ri-mail-line"></i>
                 </span>{" "}
                 azilrababe@gmail.com
               </a>
@@ -28,7 +28,7 @@ const Footer = () => {
             <li>
               <a href="#">
                 <span>
-                  <i class="ri-map-pin-line"></i>
+                  <i className="ri-map-pin-line"></i>
                 </span>
                 kenitra, Morocco
               </a>
@@ -36,9 +36,9 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div class="footer__col">
+        <div className="footer__col">
           <h4>Quick Links</h4>
-          <ul class="footer__links">
+          <ul className="footer__links">
             <li>
               <a href="#">Home</a>
             </li>
@@ -60,15 +60,15 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div class="footer__col">
+        <div className="footer__col">
           <h4>Opening Hours</h4>
-          <ul class="footer__links">
+          <ul className="footer__links">
             <li>Weekdays 6am - 12am</li>
             <li>Weekends 7am - 10pm</li>
           </ul>
         </div>
       </div>
-      <div class="footer__bar">
+      <div className="footer__bar">
         Copyright © 2025 Zenova. All rights reserved.
       </div>
     </section>

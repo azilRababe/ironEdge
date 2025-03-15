@@ -1,11 +1,9 @@
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
-import { Roboto } from "next/font/google";
+import { Inter } from "next/font/google";
 
-const roboto = Roboto({
-  weight: ["400", "900"],
-  style: ["normal", "italic"],
+const inter = Inter({
   subsets: ["latin"],
   display: "swap",
 });
@@ -20,10 +18,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="light">
       <body
-        className={cn(
-          "min-h-screen font-sans antialiased grainy",
-          roboto.className
-        )}
+        className={
+          (cn("min-h-screen font-sans antialiased grainy"), inter.className)
+        }
       >
         <Navbar />
         {children}
